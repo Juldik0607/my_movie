@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my_movie/static/css/main.0fd5d7c9.css",
+    "main.js": "/my_movie/static/js/main.a9f299e6.js",
+    "static/media/MDB.svg": "/my_movie/static/media/MDB.de1a664e8d0777ca4ddb2a5a298bcfb6.svg",
+    "index.html": "/my_movie/index.html",
+    "main.0fd5d7c9.css.map": "/my_movie/static/css/main.0fd5d7c9.css.map",
+    "main.a9f299e6.js.map": "/my_movie/static/js/main.a9f299e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fd5d7c9.css",
+    "static/js/main.a9f299e6.js"
+  ]
+}
