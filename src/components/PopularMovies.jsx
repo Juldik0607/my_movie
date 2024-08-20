@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Carousel from "./Carousel";
 import MovieCard from "./MovieCard";
-import CategoryLoading from "./Loading/CategoryLoading";
+
 
 const PopularMovies = () => {
   const { popularMovies, isLoading } = useSelector(
@@ -10,7 +10,7 @@ const PopularMovies = () => {
   );
   // I dont fetch popular again because of I fetched it in the Hero component
 
-  if (isLoading) return <CategoryLoading />;
+  
 
   return (
     <div className="text-white pt-12 px-6 sm:pt-16 sm:px-12 md:pt-20 md:px-20 lg:pt-24 lg:px-28">

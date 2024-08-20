@@ -1,6 +1,7 @@
 {
   "name": "my-movie-app",
   "version": "0.1.0",
+  "homepage": "https://juldik0607.github.io/my_movie",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",

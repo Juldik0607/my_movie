@@ -5,7 +5,7 @@ import { fetchLatest } from "../redux/reducers/latestMoviesSlice";
 // components
 import Carousel from "./Carousel";
 import MovieCard from "./MovieCard";
-import CategoryLoading from "./Loading/CategoryLoading";
+
 
 const LatestMovies = () => {
   const dispatch = useDispatch();
@@ -15,8 +15,7 @@ const LatestMovies = () => {
     dispatch(fetchLatest());
   }, [dispatch]);
 
-  if (isLoading) return <CategoryLoading />;
-
+ 
   // Проверка на наличие и корректность данных
   if (!Array.isArray(latestMovies) || latestMovies.length === 0) {
     return <div>No latest movies available.</div>;

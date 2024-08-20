@@ -26,6 +26,7 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
+      <Route basename="/my_movie"></Route>
       <Route index element={<Home />} />
       <Route path="/movie/:movieId" element={<SingleMovie />} />
       <Route path="/favorites" element={<Favorites />} />

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import { fetchPopular } from "../redux/reducers/popularMoviesSlice";
 import { useSelector, useDispatch } from "react-redux";
-import HeroLoading from "./Loading/HeroLoading";
+
 
 //icons
 import { BiLinkExternal } from "react-icons/bi";
@@ -20,7 +20,7 @@ const Hero = () => {
   const randomPopular =
     popularMovies[Math.floor(Math.random() * popularMovies.length)];
 
-  if (isLoading) return <HeroLoading />;
+  
 
   return (
     <div className="w-full h-[400px] md:h-[500px] relative">

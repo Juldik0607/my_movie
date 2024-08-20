@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchActorDetails, fetchActorMovies } from "../redux/reducers/actorMoviesSlice";
 import { useParams, Link } from "react-router-dom";
-import CategoryLoading from "../components/Loading/CategoryLoading";
+
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
 
@@ -17,7 +17,7 @@ const ActorMovies = () => {
     dispatch(fetchActorMovies(actorId));
   }, [dispatch, actorId]);
 
-  if (isLoading) return <CategoryLoading />;
+  
 
   if (!actorDetails) return <div>No actor details available.</div>;
 

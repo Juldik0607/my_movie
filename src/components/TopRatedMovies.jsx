@@ -5,7 +5,7 @@ import { fetchTopRated } from "../redux/reducers/topRatedMoviesSlice";
 // components
 import Carousel from "./Carousel";
 import MovieCard from "./MovieCard";
-import CategoryLoading from "./Loading/CategoryLoading";
+
 
 const TopRatedMovies = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const TopRatedMovies = () => {
     dispatch(fetchTopRated());
   }, [dispatch]);
 
-  if(isLoading) return <CategoryLoading />
+  
 
   return (
     <div className="text-white pt-12 px-6 sm:pt-16 sm:px-12 md:pt-20 md:px-20 lg:pt-24 lg:px-28">
