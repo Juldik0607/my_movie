@@ -33,7 +33,11 @@ const SingleMovie = () => {
     }
   }, [movieDetails]);
 
+<<<<<<< HEAD
   
+=======
+  if (isLoading) return <CategoryLoading />;
+>>>>>>> 0ba3b8746129d69c8bc5059010e656e1f5529177
 
   if (!movieDetails) return <div>No movie details available.</div>;
 
